@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="380.0" prefWidth="204.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <HBox layoutX="2.0" prefHeight="260.0" prefWidth="200.0" spacing="24.0" AnchorPane.leftAnchor="2.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <VBox fx:id="labelVBox" prefHeight="230.0" prefWidth="91.0" spacing="16.0">
+                    <children>
+                        <Label fx:id="labelName" text="Name">
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="priceLabel" text="Price">
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="materialLabel" text="Material">
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="weightLabel" text="Weight">
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="widthLabel" text="Width">
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="lengthLabel" text="Length">
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </VBox>
+                <VBox prefHeight="200.0" prefWidth="100.0" spacing="16.0">
+                    <children>
+                        <TextField fx:id="nameTextField" />
+                        <TextField fx:id="priceTextField" />
+                        <TextField fx:id="materialTextField" />
+                        <TextField fx:id="weightTextField" />
+                        <TextField fx:id="widthTextField" />
+                        <TextField fx:id="lengthTextField" />
+                    </children>
+                </VBox>
+            </children>
+            <padding>
+                <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+            </padding>
+        </HBox>
+        <Button fx:id="editButton" layoutX="75.0" layoutY="303.0" mnemonicParsing="false" text="EDIT">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Button>
+        <Label fx:id="errorLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="79.0" layoutY="271.0" textAlignment="JUSTIFY" textFill="RED" textOverrun="CENTER_ELLIPSIS" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
